@@ -1,0 +1,72 @@
+.pro {
+
+    @media screen and (min-width: 768px) {
+        width: 26.5%;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 90%;
+    }
+}
+
+.pro .btn {
+    background-color: rgb(38, 37, 34);
+    margin-left: 15%;
+    margin-bottom: 1.5rem;
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+.pro:hover {
+    border-color: green;
+}
+
+.pro .btn:hover {
+    background-color: rgb(255, 253, 158);
+    color: black;
+    transform: scale(1, 1);
+}
+
+.pro img:hover {
+    transform: scale(1.15, 1.15);
+}
+
+.projectContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 2%;
+        padding: 0;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.projectText {
+    padding: 5%;
+    /* background-color: #f6f6f6; */
+    border-radius: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 2px 2px 5px rgba(112, 113, 112, 0.758);
+    width: 100%;
+    background-color: rgba(158, 20, 20, 0.039);
+    text-align: justify;
+}
+
+.projectImg img {
+    @media screen and (min-width: 768px) {
+        width: 70%;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+}

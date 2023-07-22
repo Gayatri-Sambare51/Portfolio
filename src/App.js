@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserNotSupported } from '@mui/icons-material';
+import Home from './Components/Home'
+import React from 'react';
+import ContactForm from './Components/ContactForm';
+import { Route, Switch, BrowserRouter } from 'react-router-dom'
+import Certificates from './Components/Certificates';
+import Project from './Components/Project';
+import TopBar from './Components/TopBar';
+import { Router } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Home />
+      {/* // <Router>
+      //   <TopBar />
+      //   <Routes>
+      //     <Route exact path="/"><Home /></Route>
+      //     <Route exact path="/contact"><ContactForm /></Route>
+      //     <Route exact path="/certificates" ><Certificates /></Route>
+      //     <Route exact path="/projects"><Project /></Route> 
+      //   </Routes>
+      // </Router> */}
+      {/* <div>
+        <TopBar />
+        <Router>
+          <Routes>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/contact" component={ContactForm} />
+            <Route exact path="/certificates" component={Certificates} />
+            <Route exact path="/projects" component={Project} />
+          </Routes>
+        </Router>
+      </div> */}
+    </>
   );
 }
 
 export default App;
+
+
