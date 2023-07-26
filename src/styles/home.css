@@ -70,14 +70,21 @@ h2 {
 }
 
 .split {
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 780px) {
         .testimonial-avatar {
             margin-left: -45px;
-            width: 40%;
+            width: 30%;
             border-radius: 50%;
             object-fit: cover;
-            margin-top: 3%;
+            margin-top: 1%;
             text-align: center;
+        }
+
+    }
+
+    @media screen and (min-width: 768px) {
+        .testimonial-avatar {
+            margin-top: 5%;
         }
     }
 }
@@ -131,8 +138,15 @@ h2 {
 }
 
 .pro {
-    float: left;
-    width: 33.33%;
+    @media screen and (min-width: 768px) {
+        float: left;
+        width: 28.5%;
+    }
+
+    @media screen and (max-width: 600px) {
+        float: left;
+        width: 95%;
+    }
 }
 
 .graduationtext {

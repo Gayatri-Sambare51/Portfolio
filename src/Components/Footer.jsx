@@ -1,7 +1,8 @@
 import React from 'react';
-import { CDBNavbar, CDBBtn, CDBIcon, CDBBox } from 'cdbreact';
-import { Typography } from '@mui/material';
-
+import { CDBNavbar, CDBBtn, CDBBox } from 'cdbreact';
+import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 export const Footer = () => {
     return (
         <CDBNavbar className="shadow" style={{ backgroundColor: "rgb(200, 248, 165)", padding: '10%', margin: "0%", width: '100%' }}>
@@ -11,11 +12,6 @@ export const Footer = () => {
                         <p className="h3 mb-0 " style={{ fontWeight: '600', textColor: 'white' }}>
                             Let's make something amazing Together
                         </p>
-                        {/* <p className="h6  mb-2" style={{ textColor: 'white' }}>
-                            Start By  &nbsp;
-                            <span className="ms-3 h5 ">Saying Hii</span>
-                        </p> */}
-
                     </CDBBox>
                 </CDBBox>
                 <hr />
@@ -37,21 +33,21 @@ export const Footer = () => {
                         </a>
                     </CDBBox>
                     <CDBBox>
-                        <small className="ms-2 ">&copy; Devwares, 2023. All rights reserved.</small>
+                        <small className="ms-2 ">&copy; Copyright, 2023. All rights reserved.</small>
                     </CDBBox>
                     <CDBBox display="flex" marginTop="10px">
-                        <CDBBtn flat color="dark" className="p-2">
-                            <CDBIcon fab icon="facebook-f" />
+                        <CDBBtn className="p-2">
+                            <FontAwesomeIcon icon={faLinkedin} size="2x" onClick={() => window.open("https://.linkedin.com/in/gayatri-sambare-68ba691b2", '_blank')} />
                         </CDBBtn>
-                        <CDBBtn flat color="dark" className="mx-3 p-2">
-                            <CDBIcon fab icon="twitter" />
+                        <CDBBtn className="mx-3 p-2">
+                            <FontAwesomeIcon icon={faInstagram} size="2x" onClick={() => window.open("https://github.com/Gayatri-Sambare51/", '_blank')} />
                         </CDBBtn>
-                        <CDBBtn flat color="dark" className="p-2">
-                            <CDBIcon fab icon="instagram" />
+                        <CDBBtn className="p-2">
+                            <FontAwesomeIcon icon={faGithub} size="2x" onClick={() => window.open("https://instagram.com/gayatri_.51/", '_blank')} />
                         </CDBBtn>
                     </CDBBox>
-                </CDBBox>
-            </CDBBox>
+                </CDBBox >
+            </CDBBox >
         </CDBNavbar >
     );
 };

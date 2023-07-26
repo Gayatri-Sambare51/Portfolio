@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import '../styles/ContactForm.css';
 import contact from '../contactt.jpg'
 import EmailIcon from '@mui/icons-material/Email';
-import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import { InputAdornment } from '@mui/material';
 const ContactForm = () => {
     const [name, setName] = useState('');
