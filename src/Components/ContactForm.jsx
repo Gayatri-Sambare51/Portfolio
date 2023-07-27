@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import '../styles/ContactForm.css';
-import contact from '../contactt.jpg'
+import contact from '../images/contactt.jpg'
 import EmailIcon from '@mui/icons-material/Email';
 import { InputAdornment } from '@mui/material';
 const ContactForm = () => {
